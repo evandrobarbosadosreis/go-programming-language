@@ -4,11 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"sync"
 )
-
-var mu sync.Mutex
-var count int
 
 func main() {
 	http.HandleFunc("/", handler)
